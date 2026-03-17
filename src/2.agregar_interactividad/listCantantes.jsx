@@ -1,10 +1,18 @@
+import CardCantantes from "./cardCantantes";
 
-
-export default function ListCantantes (cantas){
+export default function ListCantantes ({cantantes}){
     return(
-        <p>
-            {cantas.map((singer) => <p>{singer.nombre}</p>)}
-        </p>
+        <ul>
+            {
+                cantantes.map(
+                    (cantante) => <li key={cantante.id}>
+                        <CardCantantes 
+                        {...cantante}
+                        /></li>
+                )
+            }
+
+        </ul>
 
     );
 

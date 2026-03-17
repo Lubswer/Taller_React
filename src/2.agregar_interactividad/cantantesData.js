@@ -2,6 +2,7 @@ export const cantantes = [
   {
     nombre: "Julio Jaramillo",
     fecha_de_nacimiento: "1935-10-01",
+    foto_url: "https://upload.wikimedia.org",
     informacion_general: "Conocido como 'El Ruiseñor de América', fue un cantante y músico guayaquileño. Es el artista ecuatoriano más reconocido a nivel internacional, destacando en géneros como el pasillo, bolero, vals y tango.",
     mejores_exitos: [
       {
@@ -21,6 +22,7 @@ export const cantantes = [
   {
     nombre: "Juan Fernando Velasco",
     fecha_de_nacimiento: "1972-01-17",
+    foto_url: "https://upload.wikimedia.org",
     informacion_general: "Cantautor y productor quiteño, ganador de un Emmy y nominado a los Latin Grammy.",
     mejores_exitos: [
       {
@@ -40,6 +42,7 @@ export const cantantes = [
   {
     nombre: "Mirella Cesa",
     fecha_de_nacimiento: "1984-12-18",
+    foto_url: "https://upload.wikimedia.org",
     informacion_general: "Cantante ecuatoriana creadora del género Andipop.",
     mejores_exitos: [
       {
@@ -59,7 +62,8 @@ export const cantantes = [
   {
     nombre: "Paulina Tamayo",
     fecha_de_nacimiento: "1965-04-14",
-    informacion_general: "Conocida como 'La Grande del Ecuador', una de las máximas exponentes de la música nacional.",
+    foto_url: "https://pbs.twimg.com",
+    informacion_general: "Conocido como 'La Grande del Ecuador', una de las máximas exponentes de la música nacional.",
     mejores_exitos: [
       {
         titulo: "Amor Dolor",
@@ -78,6 +82,7 @@ export const cantantes = [
   {
     nombre: "Gerardo Mejía",
     fecha_de_nacimiento: "1965-04-16",
+    foto_url: "https://upload.wikimedia.org",
     informacion_general: "Rapero ecuatoriano que triunfó en EE.UU. en los 90.",
     mejores_exitos: [
       {
@@ -97,6 +102,7 @@ export const cantantes = [
   {
     nombre: "Marques",
     fecha_de_nacimiento: "1988-06-25",
+    foto_url: "https://i.scdn.co",
     informacion_general: "Cantautor quiteño de pop y balada romántica.",
     mejores_exitos: [
       {
