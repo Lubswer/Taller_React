@@ -1,6 +1,12 @@
+import ListCantantes from "./listCantantes.jsx"
+import {cantantes} from "./cantantesData.js"
 export default function GridCantantes (){
+    let can = cantantes
+    let cantas = [...can]
     return (
-        <ul>hola jsajasjd</ul>
+        <div>
+            <ListCantantes cantantesList = {cantas}/>
+        </div>
 
     );
 }

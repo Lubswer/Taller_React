@@ -1,4 +1,4 @@
-const cantantes = [
+export const cantantes = [
   {
     nombre: "Julio Jaramillo",
     fecha_de_nacimiento: "1935-10-01",

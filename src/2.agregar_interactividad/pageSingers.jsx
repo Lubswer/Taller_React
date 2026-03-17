@@ -1,4 +1,4 @@
-import GridCantantes from `./gridCantantes`
+import GridCantantes from "./gridCantantes.jsx"
 
 export default function PageSingers (){
     return(
