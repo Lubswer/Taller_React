@@ -5,12 +5,7 @@ export default function CardCantantes (cantante){
             {cantante.nombre}
             <ul>
                 <CancionesCantantes cancion = {cantante.mejores_exitos} />
-
             </ul>
-
-
-
-
         </div>
     );
 }
