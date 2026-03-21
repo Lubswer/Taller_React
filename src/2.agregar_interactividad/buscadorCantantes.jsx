@@ -4,24 +4,10 @@ import { useState } from "react";
 export default function BuscadorCantantes() {
   const [busqueda, setBusqueda] = useState("");
 
-  function filtrarCantantes(paraBuscar) {
-      if(paraBuscar.trim().length === 0){
-        return"Resultados de Busqueda"
-      }
-      if(paraBuscar.trim().length > 0){
-        return cantantes.filter((cantante) => cantante.nombre.toLowerCase().includes(paraBuscar.toLowerCase())).map((cantante) => cantante.nombre)
-      }
-      return []
-  }
-  async function arrayCantantes(paraBuscar) {
-    let resultado = await filtrarCantantes(paraBuscar)
-
-    if(resultado.length === 0) {
-        resultado.push("No se encontraron resultados")
-    }
-    return resultado.forEach((cantante) => cantante);
-  }
-
+  const resultados = cantantes.filter((cantante) =>
+    cantante.nombre.toLowerCase().includes(busqueda.toLowerCase())
+  );
+  
   return (
     <div>
       <span>Buscar</span>
@@ -32,11 +18,17 @@ export default function BuscadorCantantes() {
         onChange={(e) => setBusqueda(e.target.value)}
       />
       <ul>
-        {arrayCantantes(busqueda).map((cantante, index) => (
-          <li key={index}>{cantante}</li>
-        ))}
-      </ul>
 
+        {busqueda.trim().length === 0 ? (
+          <li>Ingresa un nombre para buscar</li>
+        ) : resultados.length > 0 ? (
+          resultados.map((cantante) => (
+            <li key={cantante.id}>{cantante.nombre}</li>
+          ))
+        ) : (
+          <li>No se encontraron resultados</li>
+        )}
+      </ul>
     </div>
   );
 }
