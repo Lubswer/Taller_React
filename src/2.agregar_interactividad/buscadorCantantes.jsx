@@ -7,7 +7,7 @@ export default function BuscadorCantantes() {
   const resultados = cantantes.filter((cantante) =>
     cantante.nombre.toLowerCase().includes(busqueda.toLowerCase())
   );
-  
+
   return (
     <div>
       <span>Buscar</span>
@@ -18,7 +18,7 @@ export default function BuscadorCantantes() {
         onChange={(e) => setBusqueda(e.target.value)}
       />
       <ul>
-
+        
         {busqueda.trim().length === 0 ? (
           <li>Ingresa un nombre para buscar</li>
         ) : resultados.length > 0 ? (
