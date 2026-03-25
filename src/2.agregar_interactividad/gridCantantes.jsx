@@ -4,6 +4,7 @@ export default function GridCantantes (){
     return (
         <div>
             <ListCantantes cantantes = {cantantes}/>
+    
         </div>
     
     );
